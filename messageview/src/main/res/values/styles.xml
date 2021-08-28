@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MessageViewTexts" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/mv_side_space</item>
+        <item name="android:layout_marginRight">@dimen/mv_side_space</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MessageViewTexts.Title">
+        <item name="android:textSize">@dimen/mv_title_size</item>
+        <item name="android:layout_marginTop">@dimen/mv_vertical_space</item>
+    </style>
+
+    <style name="MessageViewTexts.Desc">
+        <item name="android:textSize">@dimen/mv_description_size</item>
+        <item name="android:layout_marginTop">@dimen/mv_vertical_space_half</item>
+    </style>
+
+</resources>

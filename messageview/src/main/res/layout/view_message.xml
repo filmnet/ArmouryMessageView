@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="messageView"
+            type="dev.armoury.android.widget.MessageView" />
+
+    </data>
+
+    <merge>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="@dimen/mv_progress_indicator"
+            android:layout_height="@dimen/mv_progress_indicator" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mv_vertical_space"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_title"
+            style="@style/MessageViewTexts.Title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_description"
+            style="@style/MessageViewTexts.Desc" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/mv_button_height"
+            android:layout_marginTop="@dimen/mv_vertical_space"
+            android:gravity="center"
+            android:onClick="@{messageView::onClick}"
+            android:paddingLeft="@dimen/mv_side_space_half"
+            android:paddingRight="@dimen/mv_side_space_half" />
+
+    </merge>
+</layout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MessageView">
+        <attr name="mv_animation_file" format="string"/>
+        <attr name="mv_repeat_animation" format="boolean" />
+        <!--Texts-->
+        <!--Titles-->
+        <attr name="mv_title_normal" format="reference"/>
+        <attr name="mv_title_loading" format="reference"/>
+        <attr name="mv_title_error" format="reference"/>
+        <!--Descriptions-->
+        <attr name="mv_desc_normal" format="reference"/>
+        <attr name="mv_desc_loading" format="reference"/>
+        <attr name="mv_desc_error" format="reference"/>
+        <!--Button Text-->
+        <attr name="mv_button_text" format="reference" />
+        <!--Colors-->
+        <!--Title Text Color-->
+        <attr name="mv_title_color_normal" format="color"/>
+        <attr name="mv_title_color_loading" format="color"/>
+        <attr name="mv_title_color_error" format="color"/>
+        <!--Description Text Color-->
+        <attr name="mv_desc_color_normal" format="color"/>
+        <attr name="mv_desc_color_loading" format="color"/>
+        <attr name="mv_desc_color_error" format="color"/>
+        <!--Button Text Color-->
+        <attr name="mv_button_text_color" format="color"/>
+        <!--Icons-->
+        <attr name="mv_image_normal" format="reference"/>
+        <attr name="mv_image_loading" format="reference"/>
+        <attr name="mv_image_error" format="reference"/>
+        <!--Button Background-->
+        <attr name="mv_button_background" format="reference"/>
+        <!--Dimension-->
+        <attr name="mv_button_width" format="reference" />
+        <attr name="mv_button_height" format="reference" />
+        <!--State-->
+        <attr name="mv_state" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="loading" value="1" />
+            <enum name="error" value="2" />
+            <enum name="hide" value="3" />
+        </attr>
+    </declare-styleable>
+
+</resources>

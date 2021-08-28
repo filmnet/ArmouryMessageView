@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="mv_vertical_space_half">6dp</dimen>
+    <dimen name="mv_vertical_space">10dp</dimen>
+    <dimen name="mv_side_space_half">20dp</dimen>
+    <dimen name="mv_side_space">40dp</dimen>
+
+    <dimen name="mv_title_size">16dp</dimen>
+    <dimen name="mv_description_size">14dp</dimen>
+
+    <dimen name="mv_button_height">40dp</dimen>
+
+    <dimen name="mv_progress_indicator">40dp</dimen>
+
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MessageView</string>
+    <string name="message_loading">در حال دریافت…</string>
+</resources>

@@ -156,7 +156,7 @@ class MessageView @JvmOverloads constructor(
                     }
                 })
                 binding.animation.addAnimatorUpdateListener { valueAnimator ->
-                    externalCallbacks?.onAnimationProgress(valueAnimator.animatedValue as Float)
+                    externalCallbacks?.onAnimationProgress(valueAnimator.animatedValue as? Float)
                 }
                 playAnimation()
             }
@@ -296,7 +296,7 @@ class MessageView @JvmOverloads constructor(
 
         fun onAnimationEnd()
 
-        fun onAnimationProgress(progress: Float)
+        fun onAnimationProgress(progress: Float?)
     }
 
     open class SimpleCallbacks : Callbacks {
@@ -305,7 +305,7 @@ class MessageView @JvmOverloads constructor(
 
         override fun onAnimationEnd() {}
 
-        override fun onAnimationProgress(progress: Float) {}
+        override fun onAnimationProgress(progress: Float?) {}
     }
 
     @Retention(AnnotationRetention.SOURCE)
